@@ -4,16 +4,18 @@
 # You will need an API key from exchangr for this to work.
 # To ease your tasks, you can simply execute the code below with these API endpoints and query parameters:
 
+# import requests and json module 
+import requests, json
+
 # API Endpoints
 API_KEY = "612q5e02ebb2403738ks3yv1680rc4ya0h2c24l52nc8q33qgb875xpb0z7f"
 base = "SGD"
 symbols = "USD,CAD,EUR"
+data = "data = "2022-08-24"
 
 # Exchangr API URL with end points using f-strings
-url = f"https://app.getexchangr.com/api/2022-08-24?access_key={API_KEY}&base={base}&symbols={symbols}"
+url = f"https://app.getexchangr.com/api/{date}?access_key={API_KEY}&base={base}&symbols={symbols}"
 
-# import requests and json module 
-import requests, json
 # get the data using .get() from request library
 response = requests.get(url)
 # print the url to check if the endpoints are correct.
