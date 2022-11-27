@@ -151,26 +151,21 @@ for index, value in enumerate(range(80,150)):
     ## Enter your height in metres: 2 (user input height as 2)
     ## Your height of 2.0 in metre is 6.56168 in feet.
 
+
 def height_func():
+
     while True:
-        try:
-            user_input = float(input("Enter your height in metres: "))
-        except ValueError:
+
+        user_input = input("Enter your height in metres: ")
+
+        if user_input.isdigit() == False:
             print("Your input is invalid, please try again")
+        
         else:
-            print(f"Your height of {user_input} in metre is {user_input*3.28084} in feet.")
-            break
-
-# alternate solution #
-def height_func_alt():
-    while True:
-        try:
-            user_input = float(input("Enter your height in metres: "))
-            print(f"Your height of {user_input} in metre is {user_input*3.28084} in feet.")
-            break
-        except ValueError:
-            print("Your input is invalid, please try again")
-
+            feet = float(user_input) * 3.28084
+            return f"Your height of {user_input} in metre is {feet} in feet."
+            
+print(height_func())
 #10
 # Create a function to prompt a user to enter temperature in degrees celsius.
 # Users are allowed to enter only number data type. If a user enters strings or characters,
@@ -190,11 +185,15 @@ def height_func_alt():
 def weather_function():
 
     while True:
-        try:
-            temp = float(input("Enter temperature in degrees celsius: "))
-        except ValueError:
+
+        temp =input("Enter temperature in degrees celsius: ")
+        
+        if temp.isdigit() == False:
             print("Invalid entry, please enter the temperature in numbers again")
+        
         else:
+
+            temp = float(temp)
           
             if temp > 30:
                 weather_category = "HOT"
@@ -209,3 +208,4 @@ def weather_function():
 
             return weather_category
 
+print(weather_function())
