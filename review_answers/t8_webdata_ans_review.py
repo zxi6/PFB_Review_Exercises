@@ -11,7 +11,7 @@ import requests, json
 API_KEY = "612q5e02ebb2403738ks3yv1680rc4ya0h2c24l52nc8q33qgb875xpb0z7f"
 base = "SGD"
 symbols = "USD,CAD,EUR"
-data = "data = "2022-08-24"
+data = "2022-08-24"
 
 # Exchangr API URL with end points using f-strings
 url = f"https://app.getexchangr.com/api/{date}?access_key={API_KEY}&base={base}&symbols={symbols}"
