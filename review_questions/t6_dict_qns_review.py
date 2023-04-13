@@ -41,3 +41,24 @@ business_data = [['Armchair', 120000, 85000], ['Dining Table', 180000, 100000], 
 # If 'revenue' is supplied to the parameter, the function will return total revenue.
 # If 'cost' is supplied to the parameter, the function will return total cost.
 # If the options are neither 'revenue' nor 'cost', the function will return "Invalid Option"
+
+# 9.
+# A tuition center keeps track of monthly new sign up of subjects it offered and signup fee per student.
+# A sample of 3 months of data is given below in the variable tuition data.
+#  The data is a nested list with the following elements in each sub-list:
+## 1. Subject
+## 2. Month 
+## 3. Number of new sign ups
+## 4. Signup fee per student
+
+tuition_data = [['math', 1, 100, 320], ['Econ', 1, 110, 300], ['English', 1, 80, 280],
+                ['math', 2, 150, 330], ['Econ', 2, 130, 300], ['English', 2, 90, 280],
+                ['math', 3, 200, 350], ['Econ', 3, 170, 320], ['English', 3, 120, 300]]
+
+# Write a code automatically calculate the total number of new signups and the signup fees collected by subjects.
+# Your code should be generic to hanle data of more than 3 months 
+# It should display the follow output:
+    # Summary of new signups by subjects
+    # math: 450 151500
+    # Econ: 410 126400
+    # English: 290 83600
