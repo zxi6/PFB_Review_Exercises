@@ -34,7 +34,8 @@ unit = "20-22"
 street = "clementi road" 
 postal_code = "573679"
 
-# 9. Use `.replace()` to replace `Rihana` to `BTS` in `favourite_artist` variable.
+# 9. Use `.replace()` to replace `Rihana` to `BTS`, replace 'my' with 'her' in `favourite_artist` variable
+#    so the value of the variable will be changed to 'BTS is her favourite artise'
 favourite_artist = "Rihana is my favourite artist"
 
 # 10.  
